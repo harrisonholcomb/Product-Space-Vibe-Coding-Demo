@@ -1,6 +1,6 @@
-# Second Line Jazz Practice
+# Product Space Vibe Coding Demo
 
-A small, dependency-free practice tracker for rock drummers learning the foundations of jazz drumming.
+Second Line is a small, dependency-free practice tracker for rock drummers learning the foundations of jazz drumming.
 
 ## Features
 

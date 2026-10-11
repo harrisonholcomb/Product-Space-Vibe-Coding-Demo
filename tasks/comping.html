@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Practice conversational snare comping while keeping steady jazz time." />
+    <title>Add Conversational Comping — Second Line</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../practice.js" defer></script>
+    <script src="../task-page.js" defer></script>
+  </head>
+  <body data-task-id="comping">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="../index.html" aria-label="Second Line home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>Second Line</span>
+        </a>
+        <p class="eyebrow">Your jazz practice path</p>
+      </header>
+      <main id="main-content" class="task-page-main">
+        <a class="back-link" href="../index.html">← Back to practice set</a>
+        <div class="task-page-layout">
+          <aside class="progress-card" aria-labelledby="progress-title">
+            <div class="progress-heading">
+              <div><p class="meta-label" id="progress-title">Today’s progress</p><p class="progress-count"><span id="completed-count">0</span><span>/ 3</span></p></div>
+              <span class="progress-word" id="progress-word">Ready</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-label="Practice tasks completed" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"><span id="progress-fill"></span></div>
+            <p class="progress-caption" id="progress-caption"></p>
+          </aside>
+          <article class="task-detail" aria-labelledby="detail-title">
+            <div class="detail-topline"><span class="detail-number" id="detail-number"></span><span class="detail-duration" id="detail-duration"></span></div>
+            <p class="meta-label">Now practicing</p>
+            <h1 id="detail-title" class="task-title"></h1>
+            <p class="detail-objective" id="detail-objective"></p>
+            <div class="steps-block"><p class="meta-label">The exercise</p><ol id="detail-steps"></ol></div>
+            <div class="listen-for"><span aria-hidden="true">♪</span><div><p class="meta-label">Listen for</p><p id="detail-cue"></p></div></div>
+            <button class="complete-button" id="complete-button" type="button"><span class="button-icon" aria-hidden="true">✓</span><span id="complete-button-label">Mark practice complete</span></button>
+            <p class="completion-message" id="completion-message" role="status"></p>
+          </article>
+        </div>
+        <nav class="task-navigation" aria-label="Practice task navigation"><a id="previous-task"></a><a id="next-task"></a></nav>
+      </main>
+      <footer><p>Move slowly enough to hear the space.</p><p class="disclaimer">Introductory guidance for practice—not a substitute for a teacher.</p></footer>
+    </div>
+  </body>
+</html>

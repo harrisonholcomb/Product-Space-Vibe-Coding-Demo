@@ -4,7 +4,7 @@ Second Line is a small, dependency-free practice tracker for rock drummers learn
 
 ## Features
 
-- Three focused beginner jazz exercises
+- Three focused beginner jazz exercises, each on its own page
 - Detailed instructions and listening cues
 - Per-exercise done and not-done status
 - Progress that persists in the browser

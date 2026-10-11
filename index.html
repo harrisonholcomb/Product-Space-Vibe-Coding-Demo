@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A focused jazz drum practice path for drummers learning to swing."
+    />
+    <title>Second Line — Jazz Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#main-content" aria-label="Second Line home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>Second Line</span>
+        </a>
+        <p class="eyebrow">Your jazz practice path</p>
+      </header>
+
+      <main id="main-content">
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="kicker">From backbeat to swing</p>
+            <h1 id="page-title">Build the feel.<br />One session at a time.</h1>
+            <p class="hero-intro">
+              Three short practices to loosen the grid, hear the pulse differently,
+              and start sounding at home behind a jazz kit.
+            </p>
+          </div>
+
+          <div class="progress-card" aria-labelledby="progress-title">
+            <div class="progress-heading">
+              <div>
+                <p class="meta-label" id="progress-title">Today’s progress</p>
+                <p class="progress-count"><span id="completed-count">0</span><span>/ 3</span></p>
+              </div>
+              <span class="progress-word" id="progress-word">Ready</span>
+            </div>
+            <div
+              class="progress-track"
+              role="progressbar"
+              aria-label="Practice tasks completed"
+              aria-valuemin="0"
+              aria-valuemax="3"
+              aria-valuenow="0"
+            >
+              <span id="progress-fill"></span>
+            </div>
+            <p class="progress-caption" id="progress-caption">Start with the ride cymbal and let the quarter note breathe.</p>
+          </div>
+        </section>
+
+        <section class="practice-layout" aria-label="Practice session">
+          <div class="task-column">
+            <div class="section-heading">
+              <div>
+                <p class="kicker">Session 01</p>
+                <h2>Your practice set</h2>
+              </div>
+              <p class="total-time">25 min total</p>
+            </div>
+            <div class="task-list" id="task-list" aria-label="Jazz practice tasks"></div>
+          </div>
+
+          <article class="task-detail" id="task-detail" aria-live="polite" aria-labelledby="detail-title">
+            <div class="detail-topline">
+              <span class="detail-number" id="detail-number">01</span>
+              <span class="detail-duration" id="detail-duration">8 min</span>
+            </div>
+            <p class="meta-label">Now practicing</p>
+            <h2 id="detail-title"></h2>
+            <p class="detail-objective" id="detail-objective"></p>
+
+            <div class="steps-block">
+              <p class="meta-label">The exercise</p>
+              <ol id="detail-steps"></ol>
+            </div>
+
+            <div class="listen-for">
+              <span aria-hidden="true">♪</span>
+              <div>
+                <p class="meta-label">Listen for</p>
+                <p id="detail-cue"></p>
+              </div>
+            </div>
+
+            <button class="complete-button" id="complete-button" type="button">
+              <span class="button-icon" aria-hidden="true">✓</span>
+              <span id="complete-button-label">Mark practice complete</span>
+            </button>
+            <p class="completion-message" id="completion-message" role="status"></p>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <p>Move slowly enough to hear the space.</p>
+        <p class="disclaimer">Introductory guidance for practice—not a substitute for a teacher.</p>
+      </footer>
+    </div>
+  </body>
+</html>
